@@ -1,7 +1,6 @@
 import React from "react";
-import { Grid, TextField, InputAdornment, IconButton } from "@material-ui/core";
-import Visibility from "@material-ui/icons/Visibility";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
+import { Grid, TextField} from "@material-ui/core";
+
 
 const Input = ({
   half,

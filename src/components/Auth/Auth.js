@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import { useDispatch } from "react-redux";
 import {
   Paper,
@@ -9,14 +9,14 @@ import {
   Container,
 } from "@material-ui/core";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import { GoogleLogin, googleLogout } from "@react-oauth/google";
+import { GoogleLogin } from "@react-oauth/google";
 import jwt_decode from "jwt-decode";
 import { useHistory } from "react-router-dom";
 
 import customStyles from "./styles";
 import Input from "./Input";
 import { signIn, signUp } from "../../actions/auth";
-import { AUTH, LOG_OUT } from "../../constants/actionTypes";
+import { AUTH } from "../../constants/actionTypes";
 
 const Auth = () => {
   const classes = customStyles();
@@ -95,7 +95,6 @@ const Auth = () => {
                   autoFocus
                   half
                   handleChange={handleChange}
-                  // value={formData.firstName}
                 />
                 <Input
                   name="lastName"

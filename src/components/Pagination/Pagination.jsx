@@ -12,7 +12,7 @@ const Paginate = ({ page }) => {
 
   useEffect(() => {
     dispatch(getPosts(page));
-  }, [page]);
+  }, [page,dispatch]);
 
   const classes = useStyles();
   return (
